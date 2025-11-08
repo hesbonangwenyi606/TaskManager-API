@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: blogify-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  api:
+    build: .
+    container_name: blogify-api
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/blogify
+      - JWT_SECRET=yourSuperSecretKey
+      - PORT=3000
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:

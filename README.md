@@ -1,4 +1,4 @@
-# Example API (Node.js + Express + MongoDB + JWT)
+# Taskmanager API (Node.js + Express + MongoDB + JWT)
 
 ## Quick start
 

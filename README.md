@@ -1,31 +1,22 @@
 # TaskManager API (Node.js + Express + MongoDB + JWT)
-
 A full-featured RESTful API for task management, built with Node.js, Express, MongoDB, and JWT authentication.
 
----
+### Clone the repository
 
-## 🚀 Quick Start
-
-### 1. Clone the repository
-```bash
-git clone <your-repo-url>
+git clone git@github.com:hesbonangwenyi606/TaskManager-API.git
 cd TaskManager-API
 2. Set up environment variables
 Copy the example file and update values:
 
-bash
-Copy code
 cp .env.example .env
 Edit .env:
 
 ini
-Copy code
 MONGO_URI=mongodb://localhost:27017/taskmanager
 JWT_SECRET=yourSuperSecretKey
 PORT=3000
-3. Install dependencies
-bash
-Copy code
+ ## Install dependencies
+
 npm install
 ## Start the server (development)
 
